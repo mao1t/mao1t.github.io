@@ -35,8 +35,4 @@ jobs:
       # - run: pip install mkdocs-rss-plugin           
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
-<<<<<<< HEAD
       - run: mkdocs gh-deploy --force
-=======
-      - run: mkdocs gh-deploy --force
->>>>>>> 89c1ceb93ab7e16126f8071d153edd8406aa00d5
