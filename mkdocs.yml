@@ -18,3 +18,9 @@ theme:
 
 extra_css:
   - stylesheets/extra.css # 自定义CSS
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css  # KaTeX样式
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js   # KaTeX核心
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js  # 自动渲染
+  - javascripts/katex.js     
