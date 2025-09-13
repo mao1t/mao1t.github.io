@@ -48,7 +48,7 @@ $$
 ??? tip
     
     又
-    
+
 ??? success
     双
     
@@ -70,7 +70,6 @@ $$
 
 !!! info inline end "后面的"
 
-
 !!! info inline "前面的"
     
     
@@ -82,10 +81,10 @@ $$
 === "第二个"
 
     第二个
-    
-- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- [ ] Vestibulum convallis sit amet nisi a tincidunt
-    * [x] In hac habitasse platea dictumst
-    * [x] In scelerisque nibh non dolor mollis congue sed et metus
-    * [ ] Praesent sed risus massa
-- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+
+- [x] 1
+- [ ] 2
+    * [x] 3
+    * [x] 4
+    * [ ] 5
+- [ ] 6
