@@ -12,7 +12,7 @@ $\text{qwq}$
 
 $$
 \begin{cases}
-1&x\text{ is  odd}
+1&x\text{ is  odd}\\
 2&x\text{ is even}
 \end{cases}
 $$
