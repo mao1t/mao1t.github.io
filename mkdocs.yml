@@ -6,6 +6,7 @@ nav:                       # 导航栏菜单结构，层级与目录结构对应
   - 微积分:
        - test: 微积分/qwq.md
   - 线性代数:
+       - test: 微积分/qwq.md
 
 
 theme:
