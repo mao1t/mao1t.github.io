@@ -4,9 +4,18 @@
 
 $2^2$
 
+$2^{2^2}$
+
 $\dfrac 1 2$
 
 $\text{qwq}$
+
+$$
+\begin{cases}
+1&x\text{ is  odd}
+2&x\text{ is even}
+\end{cases}
+$$
 
 # 一级标题
 ## 二级标题
@@ -20,9 +29,3 @@ $ 1 2 3 $
 
 > > 测试
 
-```cpp
-#include<bits/stdc++.h>
-using namespace std;
-signed main(){
-}
-```
