@@ -35,6 +35,7 @@ jobs:
       # - run: pip install mkdocs-rss-plugin    
       - run: pip install mkdocs-document-dates     
       - run: pip install mkdocs-ai-summary-wcowin
+      - run: pip install -r requirements.txt # 安装其他依赖
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
       - run: mkdocs gh-deploy --force
