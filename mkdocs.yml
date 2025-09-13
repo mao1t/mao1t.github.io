@@ -94,6 +94,8 @@ plugins:
       summary_language: "zh"           # 摘要语言 (zh/en/both)
       local_enabled: true             # 本地环境启用
       # debug: false                    # 是否显示调试信息（默认：false）
+      cache_enabled: true
+      cache_expire_days: 30
       enabled_folders:
         - blog
       exclude_patterns:
