@@ -4,9 +4,9 @@ site_url: "https://mao1t.github.io/"  # 部署后的域名
 nav:                       # 导航栏菜单结构，层级与目录结构对应
   - 首页: index.md
   - 微积分:
-       - test: 微积分/qwq.md
+       - test: blog/qwq.md
   - 线性代数:
-       - test: 微积分/qwq.md
+       - test: blog/qwq.md
 
 
 theme:
@@ -39,7 +39,6 @@ theme:
   icon:
     logo: 'material/school'
   features:
-    - search
     - content.action.edit
     - navigation.instant
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
@@ -49,12 +48,16 @@ theme:
     - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
     # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
     # - navigation.expand # 打开Tab时左侧目录全部展开
-    - content.tabs.link
-    - content.tooltips
+    - search.suggest # 搜索建议
+    # - search.highlight # 搜索高亮
+    - search.share # 搜索结果分享
+    - toc.follow # 目录跟随滚动
+    - content.tabs.link  #支持标签页链接
+    - content.tooltips #支持鼠标悬浮提示
     - content.code.copy #代码复制
     - content.action.edit
     - content.action.view
-    - content.code.annotate
+    - content.code.annotate # 代码注释
 
   font:
     text: 'Fira Sans'
@@ -72,6 +75,30 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js   # KaTeX核心
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js  # 自动渲染
   - javascripts/katex.js   
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - document-dates:
+      position: top            # 显示位置：top（标题后） bottom（文档末尾）
+      type: date               # 时间类型：date datetime timeago，默认：date
+      exclude:                 # 排除文件列表
+        - temp.md              # 排除指定文件
+        - drafts/*             # 排除 drafts 目录下所有文件，包括子目录
+      locale: zh               # 本地化语言：en zh zh_TW es fr de ar ja ko ru，默认：en
+      date_format: '%Y-%m-%d'  # 日期格式化字符串，例如：%Y年%m月%d日、%b %d, %Y
+      time_format: '%H:%M:%S'  # 时间格式化字符串（仅在 type=datetime 时有效）
+      show_author: false        # 是否显示作者信息，默认：true
+  - ai-summary:
+      ai_service: "glm"          # 推荐使用GLM
+      summary_language: "zh"           # 摘要语言 (zh/en/both)
+      local_enabled: true             # 本地环境启用
+      # debug: false                    # 是否显示调试信息（默认：false）
+      enabled_folders:
+        - blog
+      exclude_patterns:
+        - index.md                    # 排除 index.md 文件
+
 
 
 markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
