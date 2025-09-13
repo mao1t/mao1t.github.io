@@ -3,8 +3,8 @@ site_url: "https://mao1t.github.io/"  # 部署后的域名
 
 nav:                       # 导航栏菜单结构，层级与目录结构对应
   - 首页: index.md
-  - 微积分:
-       - test: 测试/qwq.md
+  - 测试:
+       - test: 微积分/qwq.md
 
 
 theme:
